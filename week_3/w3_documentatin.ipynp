@@ -1,1 +1,156 @@
 
+-------------------------------------------------
+1. Title
+-------------------------------------------------
+
+Week 3 Documentation
+Student Average Calculator
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+2. Identify the Components
+-------------------------------------------------
+
+2.1 Inputs
+1. Quiz 1 mark
+2. Quiz 2 mark
+3. Quiz 3 mark
+4. User choice (Y/N)
+
+-------------------------------------------------
+
+2.2 Process
+1. Receive quiz marks from the user.
+2. Calculate the average mark.
+3. Check if the average is greater than or equal to 50.
+4. Display PASS if average is 50 or above.
+5. Display FAIL if average is below 50.
+6. Ask the user whether to continue.
+
+-------------------------------------------------
+
+3.3 Outputs
+1. Average mark
+2. PASS message
+3. FAIL message
+4. Program Ended message
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+3. Design the Algorithm
+-------------------------------------------------
+
+3.1 Pseudocode
+
+START
+
+Set choice = "Y"
+
+WHILE choice == "Y"
+
+    Input quiz1
+    Input quiz2
+    Input quiz3
+
+    average = (quiz1 + quiz2 + quiz3) / 3
+
+    Display average
+
+    IF average >= 50 THEN
+        Display "PASS"
+    ELSE
+        Display "FAIL"
+    ENDIF
+
+    Input choice
+
+END WHILE
+
+Display "Program Ended"
+
+STOP
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+4. Algorithm Structure
+-------------------------------------------------
+
+4.1 Identify the Algorithm Structure
+4.2 Sequence
+
+Input quiz1
+Input quiz2
+Input quiz3
+
+average = (quiz1 + quiz2 + quiz3) / 3
+
+-------------------------------------------------
+
+4.3 Explanation
+The statements are executed one after 
+another in order.
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+5. Selection
+-------------------------------------------------
+
+5.1 Selection
+
+IF average >= 50
+    Display "PASS"
+ELSE
+    Display "FAIL"
+ENDIF
+
+-------------------------------------------------
+
+5.2 Explanation
+The program chooses between two different actions 
+based on the average mark.
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+6. Iteration
+-------------------------------------------------
+
+6.1 Iteration
+
+WHILE choice == "Y"
+
+    Repeat the process
+
+END WHILE
+
+-------------------------------------------------
+
+6.2 Explanation
+The loop repeats the program until the user enters N.
+
+-------------------------------------------------
+
+
+-------------------------------------------------
+7. Conclusion
+-------------------------------------------------
+
+This program demonstrates the three basic control structures:
+
+1. Sequence – entering marks and calculating average.
+2. Selection – determining PASS or FAIL.
+3. Iteration – repeating the program using a while loop.
+
+The program calculates the student's average mark 
+and displays the result accordingly.
+
+-------------------------------------------------
