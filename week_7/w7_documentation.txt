@@ -1,1 +1,131 @@
+FoodExpress Ordering System - Bug Documentation
+===============================================
+
+1. Project Description
+----------------------
+FoodExpress is an online food delivery system that allows customers to
+place food orders by entering the food price and quantity.
+
+
+2. Bug Identified in main.py
+----------------------------
+
+Bug:
+Problems found:
+- Missing import statement from food_order.py
+- Missing calculation logic for total payment
+- No validation for invalid customer input
+- Negative price or quantity could create invalid orders
+
+
+3. Debugging Process
+--------------------
+
+1. Opened and reviewed:
+   - main.py
+   - food_order.py
+   - test_food_order.py
+
+2. Checked the program flow:
+   - User enters food price
+   - User enters quantity
+   - System calculates total payment
+
+3. Tested different inputs:
+   - Normal price and quantity
+   - Zero values
+   - Negative values
+
+4. Compared the output with the expected test results.
+
+5. Found that main.py was missing the connection with the
+   food_order() function.
+
+
+4. Solution Implemented
+-----------------------
+
+The bug was fixed by importing the food_order function into main.py
+and using it to calculate the total payment.
+
+Before fixing:
+
+total = _________
+
+
+After fixing:
+
+from food_order import food_order
+
+total = food_order(price, quantity)
+
+
+The program can now correctly calculate:
+
+Total Payment = Price x Quantity
+
+
+5. Input Validation
+-------------------
+
+Input validation was added to prevent invalid customer orders.
+
+The system checks:
+
+- Price must be greater than 0
+- Quantity must be greater than 0
+
+Invalid examples:
+
+Price = 0
+Quantity = -2
+
+These values will be rejected because they are not valid orders.
+
+
+6. Testing Using Pytest
+-----------------------
+
+The system was tested using pytest.
+
+Command used:
+
+pytest
+
+
+The test file checked:
+
+1. Normal food order calculation
+2. Large food order calculation
+3. Small food order calculation
+4. Invalid price input
+5. Invalid quantity input
+
+
+7. Test Result
+--------------
+
+The final pytest result:
+
+============================= test session starts =============================
+
+collected 5 items
+
+test_food_order.py .....                                      [100%]
+
+============================== 5 passed ==============================
+
+
+8. Conclusion
+-------------
+
+The FoodExpress ordering system was successfully debugged and tested.
+
+The main problems were:
+- Missing function import
+- Incorrect calculation process
+- Lack of input validation
+
+After fixing the errors and running pytest, all 5 test cases passed
+successfully.
 
