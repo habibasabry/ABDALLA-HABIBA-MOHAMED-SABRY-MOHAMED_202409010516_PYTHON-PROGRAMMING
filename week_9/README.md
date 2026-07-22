@@ -23,3 +23,6 @@ The program automatically assigns a technician based on the selected priority.
 - GitHub
 
 ---
+
+## Quick system snap gif
+![alt text](SystemDemo-1.gif)
