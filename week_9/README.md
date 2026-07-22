@@ -23,8 +23,3 @@ The program automatically assigns a technician based on the selected priority.
 - GitHub
 
 ---
-
-## How to Run
-
-1. Open the terminal.
-2. Navigate to the project folder.
